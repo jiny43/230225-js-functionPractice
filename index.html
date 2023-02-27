@@ -12,9 +12,20 @@
     let rootElement = document.getElementById('root');
     console.dir(rootElement);
     let weeks = ["월요일 오늘", "수요일 쉼","금요일 놀자"];
-    
-    rootElement.textContent = weeks[0];
 
+    let counter = 0;
+    function increase(value) {
+      value = value + 1;
+      console.log(value);
+    }
+
+    rootElement.addEventListener("click", function(){
+      counter = counter+1;
+      console.log(counter);
+    });
+    
+    
+    rootElement.textContent = weeks[2];
   </script>
 </body>
 </html>
