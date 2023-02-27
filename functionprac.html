@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div id="div1">디브1</div>
+        <div id="div2">디브2</div>
+        <div id="div3">디브3</div>
+    </div>
+    <script>
+    var root = document.getElementById('root');
+    let rootchilds = root.children;
+    var divlist = document.getElementsByTagName('div');
+    for(i=0; i<rootchilds.length; i++) {
+        if(i===0){ divlist[i].style.color='red';}
+        if(i===1){ divlist[i].style.color='blue';}
+        if(i===2){ divlist[i].style.color='gray';}
+    }
+
+
+</script>
+</body>
+</html>
