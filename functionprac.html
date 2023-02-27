@@ -20,8 +20,17 @@
         if(i===0){ divlist[i].style.color='red';}
         if(i===1){ divlist[i].style.color='blue';}
         if(i===2){ divlist[i].style.color='gray';}
+    } //검증완료
+    
+    function setColor(a,b,c){
+        var divlist = document.getElementsByTagName('div');
+        for(i=0; i<rootchilds.length; i++) {
+        if(i===0){ divlist[i].style.color='a';}
+        if(i===1){ divlist[i].style.color='b';}
+        if(i===2){ divlist[i].style.color='c';}
+        }
     }
-
+setColor('red','blue','gray'); //안됨
 
 </script>
 </body>
