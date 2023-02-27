@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+  let root = document.getElementById('root');
+  let firstDiv = document.createElement('div');
+  root.appendChild(firstDiv);
+  let secondDiv = document.createElement('div');
+  root.appendChild(secondDiv);
+  let thirdDiv = document.createElement('div');
+  root.appendChild(thirdDiv);
+  
+  let rootchilds = root.children;
+  console.log(rootchilds); // 자료
+
+  let firstDivStyle = document.getElementsByTagName('div')[1];
+  let secondDivStyle = document.getElementsByTagName('div')[2];
+  let thirdDivStyle = document.getElementsByTagName('div')[3];
+  
+  root.style.cssText = 'width:100vw; height:100vh; background-color:cadetblue;display:flex;jistfy-content: center;align-item: center; position: relative;';
+  firstDivStyle.style.cssText = 'width:500px; height:500px; border-radius: 250px; opaciy:0.8;margin-top:300px; margin-left:300px; background-color:salmon;filter:blur(20px);position:absolute;';
+  secondDivStyle.style.cssText = 'width:500px; height:500px; border-radius: 250px; opaciy:0.8;margin-top:50px; margin-left:-50px; background-color: cornflowerblue;filter:blur(20px);position:absolute;';
+  thirdDivStyle.style.cssText = 'width:500px; height:500px; border-radius: 250px; opaciy:0.8;margin-top:-100px; margin-left:50px; background-color: coral;filter:blur(10px);position:absolute;';
+
+
+  </script>
+
+</body>
+</html>

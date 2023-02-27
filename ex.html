@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <div id="root">
-    <div></div>
-  </div>
+    <div id="root">
+        <div></div>
+        <div id = item></div>    
+        <div></div>
+    </div>
 
-  <script>
-    let root = document.querySelector('#root');
-    console.dir(root);
-    let a= document.createElement('div');
-    root.appendChild(a);
-    let b = document.createElement('h1');
-    a.append(b);
-    a.append(c);
-    let c = document.createElement('p');
-    b.textContent = "hello";
-    c.textContent = "hi";
-
-    function dataFunc(a,b,c,d){
-      let obj = {
-      
-      }
-    }
-
-  </script>
+    <script>
+        let div = document.getElementsByTagName('div');
+        let root = document.getElementById('root');
+        console.log(div);//htmlcollection(4)
+        let a = root.getElementsByTagName('div');
+        console.log(a); //htmlcollection(3)
+        let b = document.getElementsByTagName('div')[1];
+        console.log(b); //div
+        let c = root.getElementsByTagName('div')[2];
+        console.log(c); //div
+        let d = document.getElementById('root')[2];
+        console.log(d); //undefined
+    </script>
 </body>
 </html>
